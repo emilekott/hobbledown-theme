@@ -1,0 +1,28 @@
+/*
+
+	Theme Name: Hobbledown
+	Author: Fhoke
+	Version: 1.0
+	Description: 
+	Build Version : 	1.0
+	Author : 			Fhoke
+	Website :			http://www.fhoke.com
+	Twitter :			@fhoke
+	
+*/
+
+
+/* Resets */
+@import "reset.css";
+/* ..Resets */
+
+/* Main styles.. */
+@import "core.css";
+/* .. Main styles*/
+
+/* Print.. */
+@media print {
+@import "print.css";
+}
+/* ..Print */
+

@@ -1,0 +1,12 @@
+/* TEAM */
+	Web designer/developer: Chris Wharton
+	Twitter: @cdwharton / @weare2ndfloor
+	From: Southampton, UK
+	Company: 2nd Floor	
+	Company website: www.weare2ndfloor.com
+
+/* SITE */
+	Last code update:2012/10/04
+	Language: English
+	Doctype: HTML5
+	Media: Espresso 2.0, Photoshop, Illustrator
