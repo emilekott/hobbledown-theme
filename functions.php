@@ -40,7 +40,7 @@ function header_style() {
         }
     </style><?php
 }
-add_custom_image_header('header_style');
+add_custom_image_header('header_style','');
 
 
 function post_comments( $comment, $args, $depth ) {
