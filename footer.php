@@ -19,6 +19,7 @@
 	</div>
 </div>
 <div class="footer-surround">	
+<?php if (!is_front_page()){ ?>
 <div class="footer-connect">
 	<div class="wrapper">
 		<div class="footer-email">
@@ -43,7 +44,7 @@
 		</div>
 	</div>
 </div>	
-
+<?php } ?>
 	<footer>
 		<div class="wrapper">
 			
