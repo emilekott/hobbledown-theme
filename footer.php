@@ -19,8 +19,8 @@
 	</div>
 </div>
 <div class="footer-surround">	
-<?php if (!is_front_page()){ ?>
-<div class="footer-connect">
+
+<div class="footer-connect"><?php if (!is_front_page()){ ?>
 	<div class="wrapper">
 		<div class="footer-email">
 			<h5>Enter Email Address <span>Receive Offers, Information, News &amp; More!</span></h5>
@@ -42,9 +42,9 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div><?php } ?>
 </div>	
-<?php } ?>
+
 	<footer>
 		<div class="wrapper">
 			
