@@ -31,7 +31,7 @@ get_header();
     <aside class="times">
         <a href="<?php get_site_url(); ?>/plan-your-visit/opening-times-membership-and-day-ticket-prices/" title="Times Membership &amp; Prices"><h2>Times <span class="medium">Membership</span> <span>&amp; Prices</span></h2></a>
     </aside>
-    <div class="footer-connect">
+    <div class="home-connect">
         <div class="wrapper">
             <div class="footer-email">
                 <h5>Enter Email Address <span>Receive Offers, Information, News &amp; More!</span></h5>

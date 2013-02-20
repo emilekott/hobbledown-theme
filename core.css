@@ -99,6 +99,8 @@ li.top-expand .grown-expanded ul li a:hover { background: #432222; }
 .footer-social { float: right; width: 310px; padding: 0; margin: 50px 35px 0 0; }
 .footer-social a.footer-tw, .footer-social a.footer-fb { float: left; width: 155px; height: 57px; margin: 10px 0 20px 0; text-indent: -9999em; background: url(assets/img/home-social.png) 0 0 no-repeat; }
 .footer-social a.footer-fb { background-position: -155px 0; }
+.home-connect { float: left; width: 100%; padding: 0; margin: -20px 0 0 0; }
+.home-connect .wrapper { min-height: 328px; background: url(assets/img/footer-connect.png) -5px 0 no-repeat; }
 footer { float: left; width: 100%; padding: 0; margin: 0; min-height: 310px; background: url(assets/img/footer.jpg) 50% 0 no-repeat; }
 .footer-surround { float: left; width: 100%; margin: 0; padding: 0; background: url(assets/img/footer-rpt-x.png) 0 106% repeat-x; }
 footer { padding-top: 2em; }
@@ -124,7 +126,7 @@ aside.times a { float: right; margin-right: 28px; width: 318px; height: 158px; b
 aside.book-tickets h2 { float: left; width: 120px; margin: 78px 0 0 22px; }
 aside.times h2 { float: right; width: 130px; margin: 33px 34px 0 0 ; }
 aside.book-tickets a:hover, aside.times a:hover { opacity:1.0; filter:alpha(opacity=100); }
-.home-divide { float: left; width: 100%; padding: 10px 0 0 0; margin: 0; }
+.home-divide { float: left; width: 100%; padding: 10px 0 0 0; margin: -70px 0 0 0; }
 .home-divide h3 { float: left; width: 448px; min-height:47px; padding-top: 10px; margin-left: 20px; background: url(assets/img/home-header.png) 0 0 no-repeat; }
 .home-divide h3.right { float: right; margin-left: 0; margin-right: 20px; }
 aside.home-summary { float: left; width: 184px; padding: 25px 25px 0 25px; margin-left: 2px; background: url(assets/img/home-summary.png) 0 0 no-repeat; margin-bottom: 90px; position: relative; z-index: 2; min-height: 333px; }
@@ -180,7 +182,7 @@ article.main.left.faq { border-bottom: none; }
 .single-right ul li:first-child a { border-top: 1px solid #d2c8bf; }
 .single-right .title { padding-top: 30px; height: 52px; }
 .single-right-btm { float: right; width: 334px; margin: 0 0 20px 0; padding: 0; height: 52px; background: url(assets/img/nav-right-btm.png) 0 100% no-repeat; }
-.single-right form { float: left; width: 80%%; padding: 20px 10% 0 10%; background: url(assets/img/search.png) 0 0 no-repeat; }
+.single-right form { float: left; width: 80%; padding: 20px 10% 0 10%; background: url(assets/img/search.png) 0 0 no-repeat; }
 .single-right form label.assistive-text { position: absolute; left: -99999em; }
 .single-right form input#s { border-radius: 5px; width: 206px; padding: 8px 5px; margin: 10px 0 15px 0; background: url(assets/img/input-shadow.gif) 0 0 repeat-x #fff; border: 2px solid #bd9c88;  }
 .single-right form .submit { background: url(assets/img/btn-search.png) 0 0 no-repeat; border: none; width: 40px; height: 49px; text-indent: -9999em; }
