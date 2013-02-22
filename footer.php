@@ -32,7 +32,7 @@
 				<button type="submit" name="signup" id="signup">Sign up!</button>
 				</form>		
 		</div><?php } ?>
-		<div class="footer-social">
+		<div class="footer-social" <?php if (is_page_template('landing.php')||is_page()&&!is_front_page()){ echo 'style="margin-left:370px; float: left;"'; }?>>
 			<h5>Connect With Us <span>Never A Magical Moment Missed.</span></h5>
 			<a class="footer-tw" href="https://twitter.com/#!/<?php echo get_option('general_setting_twitter');?>" title="Find us on Twitter">Twitter</a><a class="footer-fb" href="<?php echo get_option('general_setting_facebook');?>" title="Find us on Facebook">Facebook</a>
 			<div class="footer-links">
