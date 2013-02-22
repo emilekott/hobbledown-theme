@@ -20,8 +20,9 @@
 </div>
 <div class="footer-surround">	
 <div class="footer-connect">
-	<div class="wrapper">
+	<div class="wrapper"><?php if (!is_page_template('landing.php')){ ?>
 		<div class="footer-email">
+                    
 			<h5>Enter Email Address <span>Receive Offers, Information, News &amp; More!</span></h5>
 				<form id="ccsfg" name="ccsfg" method="post" action="">
 				<!-- ########## Email Address ########## -->
@@ -29,9 +30,11 @@
 				<!-- ########## Contact Lists ########## -->
 				<input type="hidden"  checked="checked"  value="Hobbledown" name="Lists[]" id="list_Hobbledown" />
 				<button type="submit" name="signup" id="signup">Sign up!</button>
-				</form>		
-		</div>
-		<div class="footer-social">
+				</form>	
+                    
+                        
+		</div>    <?php } ?>
+		<div class="footer-social" <?php if (is_page_template('landing.php')){ echo 'style="margin-left:370px; float: left;"'; }?>>
 			<h5>Connect With Us <span>Never A Magical Moment Missed.</span></h5>
 			<a class="footer-tw" href="https://twitter.com/#!/<?php echo get_option('general_setting_twitter');?>" title="Find us on Twitter">Twitter</a><a class="footer-fb" href="<?php echo get_option('general_setting_facebook');?>" title="Find us on Facebook">Facebook</a>
 			<div class="footer-links">
