@@ -57,12 +57,12 @@
                         <h4 class="spacer">Signup</h4>
                         <div class="signup">
                             <p><strong>Enter Email Address</strong><br />To receive offers, info, news &amp; more!</p>
-                            <form id="ccsfg" name="ccsfg" method="post" action="">
+                            <form id="ccsfg2" name="ccsfg" method="post" action="">
 				<!-- ########## Email Address ########## -->
-				<input type="email" name="EmailAddress" value="" id="EmailAddress" /><br />
+				<input type="email" name="EmailAddress" value="" id="EmailAddress2" /><br />
 				<!-- ########## Contact Lists ########## -->
 				<input type="hidden"  checked="checked"  value="Hobbledown" name="Lists[]" id="list_Hobbledown" />
-				<button type="submit" name="signup" id="signup">Sign up!</button>
+				<button type="submit" name="signup" id="signup2">Sign up!</button>
 				</form>	<?php $signup_form = TRUE; ?>
                         </div>
                         

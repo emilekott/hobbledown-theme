@@ -193,7 +193,8 @@ article.main.left.faq { border-bottom: none; }
 .single-right ul li:first-child a { border-top: 1px solid #d2c8bf; }
 .single-right .title { padding-top: 30px; height: 52px; }
 .single-right-btm { float: right; width: 334px; margin: 0 0 20px 0; padding: 0; height: 52px; background: url(assets/img/nav-right-btm.png) 0 100% no-repeat; }
-.single-right form { float: left; width: 80%%; padding: 20px 10% 0 10%; background: url(assets/img/search.png) 0 0 no-repeat; }
+.single-right form { float: left; width: 80%; padding: 20px 10% 0 10%; background: url(assets/img/search.png) 0 0 no-repeat; }
+.single-right #response { float: left; width: 80%; padding: 20px 10% 0 10%; background: url(assets/img/search.png) 0 0 no-repeat; }
 .single-right form label.assistive-text { position: absolute; left: -99999em; }
 .single-right form input#s { border-radius: 5px; width: 206px; padding: 8px 5px; margin: 10px 0 15px 0; background: url(assets/img/input-shadow.gif) 0 0 repeat-x #fff; border: 2px solid #bd9c88;  }
 .single-right form .submit { background: url(assets/img/btn-search.png) 0 0 no-repeat; border: none; width: 40px; height: 49px; text-indent: -9999em; }

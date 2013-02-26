@@ -25,6 +25,17 @@
 			    <?php wp_list_pages( array('title_li'=>'','include'=>get_post_top_ancestor_id()) ); ?>
 			    <?php wp_list_pages( array('title_li'=>'','depth'=>1,'child_of'=>get_post_top_ancestor_id()) ); ?>
 			</ul>
+                         <h4 class="spacer">Signup</h4>
+                        <div class="signup">
+                            <p><strong>Enter Email Address</strong><br />To receive offers, info, news &amp; more!</p>
+                            <form id="ccsfg2" name="ccsfg" method="post" action="">
+				<!-- ########## Email Address ########## -->
+				<input type="email" name="EmailAddress" value="" id="EmailAddress2" /><br />
+				<!-- ########## Contact Lists ########## -->
+				<input type="hidden"  checked="checked"  value="Hobbledown" name="Lists[]" id="list_Hobbledown" />
+				<button type="submit" name="signup" id="signup2">Sign up!</button>
+				</form>	<?php $signup_form = TRUE; ?>
+                        </div>
 		</nav>
 		
 		

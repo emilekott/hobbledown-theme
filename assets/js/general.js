@@ -49,22 +49,22 @@ jQuery.noConflict();
     			$(children).each(function(i){
     				var child = $(this);
     				child.hide();
-    				if(i>=lower && i<upper){ setTimeout(function(){ child.fadeIn('fast') }, ( i-( Math.floor(i/step) * step) )*options.delay ); }
+    				if(i>=lower && i<upper){setTimeout(function(){child.fadeIn('fast')}, ( i-( Math.floor(i/step) * step) )*options.delay );}
     				if(options.nextprev){
-    					if(upper >= count) { next.fadeOut('fast'); } else { next.fadeIn('fast'); };
-    					if(lower >= 1) { prev.fadeIn('fast'); } else { prev.fadeOut('fast'); };
+    					if(upper >= count) {next.fadeOut('fast');} else {next.fadeIn('fast');};
+    					if(lower >= 1) {prev.fadeIn('fast');} else {prev.fadeOut('fast');};
     				};
     			});	
     			$('a','#'+ options.controls).removeClass(options.current);
     			$('a[data-index="'+page+'"]','#'+ options.controls).addClass(options.current);
     			
     			if(options.auto){
-    				if(options.clickstop && clicked){}else{ timeout = setTimeout(auto,options.pause); };
+    				if(options.clickstop && clicked){}else{timeout = setTimeout(auto,options.pause);};
     			};
     		};
     		
     		function auto(){
-    			if(upper <= count){ page++; show(); }			
+    			if(upper <= count){page++;show();}			
     		};
     		
     		this.each(function(){ 
@@ -857,7 +857,7 @@ jQuery.noConflict();
         });
         //append gallery bottom div for next gen thumbs
         jQuery('.ngg-gallery-thumbnail-box').each(function (index) {
-         	jQuery(this).append('<div class="gallery-btm" />');
+            jQuery(this).append('<div class="gallery-btm" />');
         });
         // swap text inside pagination for nextgen
         jQuery('body .ngg-navigation a.next').html("Next >>");
@@ -870,7 +870,7 @@ jQuery.noConflict();
             // check to see if this menu item is already 'active'
             var checkCurrentClass = jQuery(targetHover + "li." + thisHrefClass).attr('class').split(' ').slice(-1);
             if (checkCurrentClass == "current-menu-item") {
-                // do nothing 
+            // do nothing 
             } else {
                 jQuery(targetHover + "li." + thisHrefClass).toggleClass("active");
             }
@@ -898,7 +898,7 @@ jQuery.noConflict();
         if ((jQuery('body').attr("id")) == "popform-standard") {}
         // close pop up on form
         jQuery('#popform, a#TB_closeWindow').click(function(e) {
-        	e.preventDefault();
+            e.preventDefault();
             jQuery('#mapoverlay, #popform, .popform').fadeOut();
         });
         $(".wpcf7-mail-sent-ok").live("click", function () {
@@ -911,6 +911,9 @@ jQuery.noConflict();
                 location.reload();
             });
         });
+       
+       
+       
         // validate form and ajax post it...
         /*
 		Created 09/27/09										
@@ -922,7 +925,7 @@ jQuery.noConflict();
         required = ["EmailAddress"];
         // If using an ID other than #email or #error then replace it here
         email = $("#EmailAddress");
-        errornotice = $("#error");
+        errornotice = $("#error2");
         // The text to show up within a field when it is incorrect
         emptyerror = "Please fill out this field.";
         emailerror = "Please enter a valid e-mail.";
@@ -977,7 +980,85 @@ jQuery.noConflict();
             $('.footer-email #response').append('<p><br />Thankyou for signing up to our newsletter</p>');
             $('.footer-email #response').fadeIn(500);
         }
+        
+        
+        
+        
+        
+        // form validation and ajax posting for sidebar email signup
+        /*
+		Created 09/27/09										
+		Questions/Comments: jorenrapini@gmail.com						
+		COPYRIGHT NOTICE		
+		Copyright 2009 Joren Rapini
+		*/
+        // Place ID's of all required fields here.
+        required2 = ["EmailAddress2"];
+        // If using an ID other than #email or #error then replace it here
+        emailadd2 = $("#EmailAddress2");
+        errornotice = $("#error2");
+        // The text to show up within a field when it is incorrect
+        emptyerror = "Please fill out this field.";
+        emailerror = "Please enter a valid e-mail.";
+        $(".signup form").submit(function () {
+            //Validate required fields
+            for (i = 0; i < required2.length; i++) {
+                var input = $('#' + required2[i]);
+                if ((input.val() == "") || (input.val() == emptyerror)) {
+                    input.addClass("needsfilled");
+                    input.val(emptyerror);
+                    errornotice.fadeIn(750);
+                } else {
+                    input.removeClass("needsfilled");
+                }
+            }
+            // Validate the e-mail.
+            if (!/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/.test(emailadd2.val())) {
+                emailadd2.addClass("needsfilled");
+                emailadd2.val(emailerror);
+            }
+            //if any inputs on the page have the class 'needsfilled' the form will not submit
+            if ($(":input").hasClass("needsfilled")) {
+                return false;
+            } else {
+                ajaxMe2();
+                errornotice.hide();
+                return false;
+            }
+        });
+        // Clears any fields in the form when the user clicks on them
+        $(":input").focus(function () {
+            if ($(this).hasClass("needsfilled")) {
+                $(this).val("");
+                $(this).removeClass("needsfilled");
+            }
+        });
+
+        function ajaxMe2() {
+            var email3 = $("input#EmailAddress2").val();
+            var dataString = '&EmailAddress=' + email3;
+            //alert (dataString);return false;
+            $.ajax({
+                type: "POST",
+                url: "/CCSFG_0.0.6/signup/index.php",
+                data: dataString,
+                success: function () {}
+            });
+            //return false;
+            $('.signup form').fadeOut(100);
+            $('.signup').append("<div id='response'></div>");
+            $('.signup #response').hide();
+            $('.signup #response').append('<p><br />Thankyou for signing up to our newsletter</p>');
+            $('.signup #response').fadeIn(500);
+        }
+        
+        
+        
+        
     });
+    
+    
+    
     
     
     

@@ -20,7 +20,7 @@
 </div>
 <div class="footer-surround">	
 <div class="footer-connect">
-	<div class="wrapper"><?php if (!is_page_template('landing.php')){ ?>
+	<div class="wrapper">
 		<div class="footer-email">
                     
 			<h5>Enter Email Address <span>Receive Offers, Information, News &amp; More!</span></h5>
@@ -33,8 +33,8 @@
 				</form>	
                     
                         
-		</div>    <?php } ?>
-		<div class="footer-social" <?php if (is_page_template('landing.php')){ echo 'style="margin-left:370px; float: left;"'; }?>>
+		</div>    
+		<div class="footer-social">
 			<h5>Connect With Us <span>Never A Magical Moment Missed.</span></h5>
 			<a class="footer-tw" href="https://twitter.com/#!/<?php echo get_option('general_setting_twitter');?>" title="Find us on Twitter">Twitter</a><a class="footer-fb" href="<?php echo get_option('general_setting_facebook');?>" title="Find us on Facebook">Facebook</a>
 			<div class="footer-links">
