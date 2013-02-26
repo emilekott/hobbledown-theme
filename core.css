@@ -96,6 +96,8 @@ li.top-expand .grown-expanded ul li a:hover { background: #432222; }
 .footer-email span, .footer-social span { display: block; }
 .footer-email input { border-radius: 5px; width: 286px; padding: 8px 5px; margin: 10px 0 15px 0; background: url(assets/img/input-shadow.gif) 0 0 repeat-x #fff; border: 2px solid #bd9c88;  }
 .footer-email button { background: url(assets/img/button-signup.png) 0 0 no-repeat; border: none; width: 125px; height: 48px; padding-bottom: 6px; }
+.signup input { border-radius: 5px; width: 170px; padding: 8px 5px; margin: 10px 0 15px 0; background: url(assets/img/input-shadow.gif) 0 0 repeat-x #fff; border: 2px solid #bd9c88;  }
+.signup button { background: url(assets/img/button-signup.png) 0 0 no-repeat; border: none; width: 125px; height: 48px; padding-bottom: 6px;color: #5e4030; font-size: 16px; font-family: Georgia, "Times New Roman", serif; text-transform: uppercase; font-weight: 700; text-shadow: 0 1px 1px #fff  }
 .footer-social { float: right; width: 310px; padding: 0; margin: 50px 35px 0 0; }
 .footer-social a.footer-tw, .footer-social a.footer-fb { float: left; width: 155px; height: 57px; margin: 10px 0 20px 0; text-indent: -9999em; background: url(assets/img/home-social.png) 0 0 no-repeat; }
 .footer-social a.footer-fb { background-position: -155px 0; }
