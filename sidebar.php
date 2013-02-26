@@ -42,7 +42,7 @@
             <input type="email" name="EmailAddress" value="" id="EmailAddress2" style="float:left;" />
             <!-- ########## Contact Lists ########## -->
             <input type="hidden"  checked="checked"  value="Hobbledown" name="Lists[]" id="list_Hobbledown" />
-            <button type="submit" name="signup" id="signup2" style="float:right; margin-right:10px;">Sign up!</button>
+            <button type="submit" name="signup" id="signup2" style="float:right;">Sign up!</button>
         </form>	<?php $signup_form = TRUE; ?>
         </div>
         <div class="single-right-btm"></div>
